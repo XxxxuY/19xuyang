@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function bake (degree) {
+      var message
+      if (degree > 100) {
+        message = "超过正常温度"
+      } else if (degree < 10) {
+        message = "温度太低，无法工作"
+      } else {
+        message = "工作正常运行"
+      }
+      return message
+    }
+    alert (bake (500))
+    alert (bake (50))
+    alert (bake (9))
+  </script>
+</body>
+</html>

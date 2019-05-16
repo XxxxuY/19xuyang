@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var high = 0
+    var subNum = []
+    var j = 0
+    var scores = [90, 45, 76, 100, 65, 76, 23, 100, 100, 54, 100]
+    for (var i = 0; i < scores.length; i++) {
+      if (scores[i] > high) {
+        high = scores[i]
+        j = 0
+        subNum = []
+        subNum[j] = i
+      } else if (scores[i] == high) {
+        j++
+        subNum[j] = i
+        }
+      }
+    // document.write('最大值是:' + high, '最大值是第' + subNum + '项')
+    // if (subNum2 != -1) {
+    // document.write('<br>最大值是:' + high, '最大值是第' + subNum2 + '项')
+    // }
+    for (var k = 0; k < subNum.length; k++) {
+      document.write('最大值是:' + high, '最大值是第' + subNum + '项<br>')
+    }
+  </script>
+</body>
+</html>
